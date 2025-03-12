@@ -1,9 +1,21 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter, Helvetica, Arial, sans-serif;
 }
 
 html {
   font-size: 62.5%;
+}
+
+sub, sup {
+
+  color: rgb(255, 66, 78);
+  font-weight: 600;
+  line-height: 150%;
 }
