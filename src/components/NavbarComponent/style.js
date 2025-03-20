@@ -10,8 +10,18 @@ export const WraperLabelText = styled.div`
 `
 
 export const WraperContentText = styled.div`
-    font-weight: 400;
+    padding: 7px 16px;
+    color: rgb(56, 56, 61);
     font-size: 14px;
-    line-height: 150%;
-    color: rgb(39, 39, 42);
+    line-height: 20px;
 `
+
+export const WraperNavbar = styled.div`
+    display: flex;
+    margin-bottom: 16px;
+    padding: 12px 8px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+`
+

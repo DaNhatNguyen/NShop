@@ -1,5 +1,5 @@
 import React from 'react'
-import { WraperContentText, WraperLabelText } from './style'
+import { WraperContentText, WraperLabelText, WraperNavbar } from './style'
 import { Checkbox, Rate } from 'antd'
 
 const NavbarComponent = () => {
@@ -10,7 +10,7 @@ const NavbarComponent = () => {
         switch (type) {
             case 'text':
                 return (options.map((option) => {
-                    return <WraperContentText>{option}</WraperContentText>
+                    return <WraperContentText>{option}</WraperContentText>   
                 }))
             case 'checkbox':
                 return (
@@ -45,12 +45,12 @@ const NavbarComponent = () => {
         }
     }
     return (
-        <div>
+        <WraperNavbar>
             <WraperLabelText>Danh Mục</WraperLabelText>
             <WraperContentText>
-                {renderContent('text', ['Nhà sách tiki', 'Điện thoai-Máy tính bảng'])}
+                        {renderContent('text', ['Nhà sách tiki', 'Điện thoai-Máy tính bảng'])}
             </WraperContentText>
-            {renderContent('checkbox', [
+            {/* {renderContent('checkbox', [
                 { value: 'a', label: 'A' },
                 { value: 'b', label: 'B' },
             ],
@@ -59,8 +59,8 @@ const NavbarComponent = () => {
             {renderContent('star', [3, 4, 5])}
             <WraperContentText>
                 {renderContent('price', ['Dưới 15000', 'Trên 20000'])}
-            </WraperContentText>
-        </div>
+            </WraperContentText> */}
+        </WraperNavbar>
     )
 }
 
