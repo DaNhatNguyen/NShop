@@ -9,7 +9,7 @@ const HeaderComponent = () => {
     <div>
       <WraperHeader  style={{padding: '10px 120px'}}>
         <Col span={6} style={{ textAlign: 'left' }}>
-          <a href="#">
+          <a href="/">
             <WraperTextHeader>
               NShop
             </WraperTextHeader>
