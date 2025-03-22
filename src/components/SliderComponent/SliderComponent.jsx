@@ -1,28 +1,6 @@
 import { Image } from 'antd';
 import React from 'react'
-import Slider from 'react-slick';
-
-const NextArow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", alignContent: "center", width: "20px", height: "33px", right: "0" }}
-      onClick={onClick}
-    />
-  );
-}
-
-const PrevArow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", alignContent: "center", width: "20px", height: "33px", left: "0"}}
-      onClick={onClick}
-    />
-  );
-}
+import { WraperSlider } from './style';
 
 
 const SliderComponent = ({arrImage}) => {
@@ -34,17 +12,15 @@ const settings = {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <NextArow />,
-    prevArrow: <PrevArow />,
     };
   return (
-    <Slider {...settings}>
+    <WraperSlider {...settings}>
         {arrImage.map((image) => {
             return(
-                <Image src={image} preview={false} width="100%" height={'186px'}/>
+                <Image src={image} preview={false} width="100%" height={'250px'}/>
             )
         })}
-    </Slider>
+    </WraperSlider>
   )
 }
 

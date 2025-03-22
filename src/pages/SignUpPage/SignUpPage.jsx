@@ -2,7 +2,7 @@ import React from 'react'
 import InputComponent from '../../components/InputComponent/InputComponent'
 import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 import signBanner from '../../assets/images/signBanner.png'
-import { WraperCreateAccout, WraperCreateAccoutSpan, WraperForgotPass } from '../SignInPage/style'
+import { WraperCreateAccout, WraperCreateAccoutSpan, WraperForgotPass, WrapInputComponent } from '../SignInPage/style'
 
 const SignUpPage = () => {
   return (
@@ -13,17 +13,17 @@ const SignUpPage = () => {
           <div style={{marginBottom: '20px', fontSize: '15px'}}>
             <h4 style={{fontSize: '24px', fontWeight: '500', marginBottom: '10px'}}>Đăng Ký Tài Khoản</h4>
           </div>
-          <InputComponent 
+          <WrapInputComponent 
             placeholder={'Tài khoản'}
             style={{
               marginBottom: '15px',
             }}
           />
-          <InputComponent 
+          <WrapInputComponent 
             placeholder={'Mật khẩu'}
             style={{marginBottom: '15px'}}
           />
-          <InputComponent 
+          <WrapInputComponent 
             placeholder={'Xác nhận mật khẩu'}
             style={{marginBottom: '15px'}}
           />

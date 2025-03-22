@@ -1,4 +1,16 @@
 import styled from "styled-components";
+import InputComponent from "../../components/InputComponent/InputComponent";
+
+
+export const WrapInputComponent = styled(InputComponent)`
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: unset;
+    &:focus {
+        background-color: rgb(232, 240, 254);
+    }
+`
 
 export const WraperForgotPass = styled.p`
     color: rgb(13, 92, 182);

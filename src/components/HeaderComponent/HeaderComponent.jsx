@@ -8,14 +8,14 @@ const HeaderComponent = () => {
   return (
     <div>
       <WraperHeader  style={{padding: '10px 120px'}}>
-        <Col span={6} style={{ textAlign: 'left' }}>
+        <Col span={4} style={{ textAlign: 'left' }}>
           <a href="/">
             <WraperTextHeader>
               NShop
             </WraperTextHeader>
           </a>
         </Col>
-        <Col span={12}>
+        <Col span={14}>
             <ButtonInputSearch
               size='large'
               placeholder='Nhập để tìm kiếm'
@@ -26,7 +26,7 @@ const HeaderComponent = () => {
               colorButton='#fff'
             />
         </Col>
-        <Col span={6} style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+        <Col span={6} style={{ display: 'flex', gap: '50px', alignItems: 'center' }}>
           <WraperHeaderAccount>
             <UserOutlined style={{ fontSize: '30px'}}/>
               <div>

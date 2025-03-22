@@ -3,7 +3,7 @@ import InputComponent from '../../components/InputComponent/InputComponent'
 import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 import signBanner from '../../assets/images/signBanner.png'
 import { Flex, Image } from 'antd'
-import { WraperCreateAccout, WraperCreateAccoutSpan, WraperForgotPass } from './style'
+import { WraperCreateAccout, WraperCreateAccoutSpan, WraperForgotPass, WrapFocusBackg, WrapInputComponent } from './style'
 
 const SignInPage = () => {
   return (
@@ -15,14 +15,13 @@ const SignInPage = () => {
             <h4 style={{fontSize: '24px', fontWeight: '500', marginBottom: '10px'}}>Xin Chào,</h4>
             <p style={{margin: '0'}}>Đăng nhập hoặc Tạo tài khoản</p>
           </div>
-          <InputComponent 
+          <WrapInputComponent 
             placeholder={'Tài khoản'}
             style={{
               marginBottom: '15px',
-
             }}
           />
-          <InputComponent 
+          <WrapInputComponent 
             placeholder={'Mật khẩu'}
             style={{marginBottom: '15px'}}
           />

@@ -9,6 +9,7 @@ import CardComponent from '../../components/CardComponent/CardComponent'
 import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 
 import NavbarComponent from '../../components/NavbarComponent/NavbarComponent'
+import { Col, Row } from 'antd'
 
 const NextArow = (props) => {
   const { className, style, onClick } = props;
@@ -32,6 +33,11 @@ const PrevArow = (props) => {
   );
 }
 
+const style = {
+  background: '#0092ff',
+  padding: '8px 0',
+};
+
 const HomePage = () => {
   const arr = ['TV', 'Tủ Lạnh', 'Máy Giặt']
   return (
@@ -46,13 +52,46 @@ const HomePage = () => {
       <div style={{display: 'flex', flexDirection: 'column', gap: '30px'}}>
         <SliderComponent arrImage={[image1, image2, image3]} />
         <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
+          <Row gutter={16}>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+          </Row>
+          <Row gutter={16}>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+            <Col className="gutter-row" span={4}>
+              <CardComponent />
+            </Col>
+          </Row>
 
         </div>
         <div style={{display: 'flex', justifyContent: 'center', gap: '30px'}}>
